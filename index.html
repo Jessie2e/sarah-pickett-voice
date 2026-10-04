@@ -3,25 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sarah Pickett Voice and Speech Services | Madison, AL</title>
-    <meta name="description" content="Specialized voice therapy, singing voice therapy, and upper airway disorder rehabilitation in Madison, Alabama. Partner with an expert speech-language pathologist and vocologist.">
+    <title>Sarah Pickett Voice & Speech Services | Madison & Huntsville, AL</title>
+    <meta name="description" content="Specialized voice therapy, singing voice therapy, voice lessons, and upper airway care in Madison and Huntsville, Alabama, with virtual appointments available across Alabama.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header class="site-header">
         <div class="container nav-container">
-            <a href="#" class="logo">
+            <a href="#top" class="logo" aria-label="Sarah Pickett Voice and Speech Services home">
                 <span class="logo-main">Sarah Pickett</span>
                 <span class="logo-sub">Voice & Speech Services</span>
             </a>
             <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
                 <span class="hamburger"></span>
             </button>
-            <nav class="site-nav">
+            <nav class="site-nav" aria-label="Primary navigation">
                 <ul class="nav-list">
                     <li><a href="#services" class="nav-link">Services</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
@@ -32,26 +31,33 @@
         </div>
     </header>
 
-    <main>
+    <main id="top">
         <section class="hero">
             <div class="container hero-grid">
                 <div class="hero-content">
-                    <span class="hero-tagline">Speech-Language Pathology & Vocology</span>
+                    <span class="hero-tagline">Voice-Specialized Speech-Language Pathologist</span>
                     <h1>Strengthen, restore, and optimize your voice.</h1>
-                    <p class="hero-lead">Specialized voice rehabilitation and coaching in Madison, Alabama, designed for adults with voice disorders, professional voice users, and performers.</p>
+                    <p class="hero-lead">Specialized voice rehabilitation and coaching in Madison and Huntsville, Alabama, designed for adults with voice disorders, professional voice users, singers, and performers.</p>
+                    <div class="service-area-pill" aria-label="Service area">
+                        <span>Madison + Huntsville</span>
+                        <span class="pill-divider" aria-hidden="true"></span>
+                        <span>Virtual Across Alabama</span>
+                    </div>
                     <div class="hero-actions">
                         <a href="#contact" class="btn btn-primary">Book an Evaluation</a>
                         <a href="#services" class="btn btn-secondary">Explore Services</a>
                     </div>
                 </div>
-                <div class="hero-image-wrapper">
-                    <div class="image-placeholder" style="background-image: url('DSC_5991 copy.jpg');"></div>
+                <div class="hero-image-wrapper portrait-frame">
+                    <img src="hero-smile.webp" alt="Sarah Pickett smiling" class="portrait-image hero-portrait">
+                    <div class="portrait-note" aria-hidden="true">Clinical expertise <span>+</span> Artistic insight</div>
                 </div>
             </div>
         </section>
 
         <section class="intro-statement">
             <div class="container container-narrow text-center">
+                <span class="section-subtitle">Thoughtful, specialized care</span>
                 <h2>Clinical Expertise Meets Artistic Insight</h2>
                 <p>Bringing five years of intensive experience from a multidisciplinary voice clinic alongside a fellowship-trained laryngologist, Sarah Pickett provides comprehensive care for complex voice conditions. Combined with a rich background in musical theatre, her private practice bridges the gap between clinical science and performance artistry.</p>
             </div>
@@ -62,39 +68,55 @@
                 <div class="section-header text-center">
                     <span class="section-subtitle">Areas of Practice</span>
                     <h2>Specialized Voice & Upper Airway Care</h2>
-                    <p class="section-lead">Tailored therapeutic interventions to restore vocal health and maximize performance capacity.</p>
+                    <p class="section-lead">Clinical rehabilitation and voice training tailored to your health, goals, and how you use your voice every day.</p>
                 </div>
-                
-                <div class="services-grid">
-                    <div class="service-card featured">
-                        <div class="service-badge">Most Important Service</div>
-                        <h3>Voice Therapy</h3>
-                        <p>Comprehensive rehabilitation designed to treat clinical voice disorders, reduce vocal fatigue, recover structural capability, and build sustainable vocal habits for everyday life.</p>
-                        <a href="#contact" class="service-link">Inquire about therapy &rarr;</a>
+
+                <div class="carousel-shell" data-carousel data-carousel-name="services">
+                    <div class="services-grid carousel-track">
+                        <article class="service-card featured">
+                            <div class="service-badge">Core Clinical Service</div>
+                            <span class="card-kicker">Clinical</span>
+                            <h3>Voice Therapy</h3>
+                            <p>Comprehensive rehabilitation designed to treat clinical voice disorders, reduce vocal fatigue, restore efficient voice use, and build sustainable vocal habits for everyday life.</p>
+                            <a href="#contact" class="service-link">Inquire about therapy <span aria-hidden="true">→</span></a>
+                        </article>
+
+                        <article class="service-card">
+                            <span class="card-kicker">For singers</span>
+                            <h3>Singing Voice Therapy</h3>
+                            <p>Specialized rehabilitation for singers and vocal athletes experiencing injury, technical changes, or rehabilitation needs following medical intervention.</p>
+                            <a href="#contact" class="service-link">Inquire about singing therapy <span aria-hidden="true">→</span></a>
+                        </article>
+
+                        <article class="service-card">
+                            <span class="card-kicker">Non-clinical</span>
+                            <h3>Voice Lessons</h3>
+                            <p>Individual voice instruction for singers and professional voice users who want to strengthen technique, improve efficiency, and build confidence without a clinical therapy focus.</p>
+                            <a href="#contact" class="service-link">Inquire about lessons <span aria-hidden="true">→</span></a>
+                        </article>
+
+                        <article class="service-card">
+                            <span class="card-kicker">Specialty care</span>
+                            <h3>Upper Airway Disorders</h3>
+                            <p>Specialized care for complex upper airway disorders, including chronic cough and inducible laryngeal obstruction (ILO), including exercise-induced laryngeal obstruction (EILO).</p>
+                            <a href="#contact" class="service-link">Inquire about airway care <span aria-hidden="true">→</span></a>
+                        </article>
+
+                        <article class="service-card">
+                            <span class="card-kicker">Affirming care</span>
+                            <h3>Gender Affirming Voice Care</h3>
+                            <p>Collaborative, personalized training designed to align vocal expression—including pitch, resonance, intonation, and non-verbal cues—with your goals and identity.</p>
+                            <a href="#contact" class="service-link">Inquire about voice care <span aria-hidden="true">→</span></a>
+                        </article>
                     </div>
 
-                    <div class="service-card">
-                        <h3>Singing Voice Therapy</h3>
-                        <p>Specialized rehabilitation tailored for vocal athletes and singers experiencing vocal injury, technical changes, or rehabilitation needs following medical intervention.</p>
-                        <a href="#contact" class="service-link">Inquire about singing therapy &rarr;</a>
-                    </div>
-
-                    <div class="service-card">
-                        <h3>Voice Coaching</h3>
-                        <p>Proactive voice training for professional voice users and performers looking to optimize output, enhance projection, and maintain long-term vocal endurance.</p>
-                        <a href="#contact" class="service-link">Inquire about coaching &rarr;</a>
-                    </div>
-
-                    <div class="service-card">
-                        <h3>Upper Airway Disorders</h3>
-                        <p>Targeted management strategies for complex upper airway presentations, including chronic cough, paradoxical vocal fold motion (PVFM), and vocal cord dysfunction.</p>
-                        <a href="#contact" class="service-link">Inquire about airway care &rarr;</a>
-                    </div>
-
-                    <div class="service-card">
-                        <h3>Gender Affirming Voice Care</h3>
-                        <p>Collaborative, personalized training designed to align vocal expression—including pitch, resonance, intonation, and non-verbal cues—with your true identity.</p>
-                        <a href="#contact" class="service-link">Inquire about voice care &rarr;</a>
+                    <div class="carousel-controls" aria-label="Service carousel controls">
+                        <span class="carousel-hint">Swipe or use arrows</span>
+                        <div class="carousel-actions">
+                            <button class="carousel-button carousel-prev" type="button" aria-label="Previous service">←</button>
+                            <span class="carousel-count" aria-live="polite">1 / 5</span>
+                            <button class="carousel-button carousel-next" type="button" aria-label="Next service">→</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -102,27 +124,29 @@
 
         <section id="about" class="about-section">
             <div class="container id-grid">
-                <div class="about-image-side">
-                    <div class="image-placeholder" style="background-image: url('DSC_5838 copy.jpg');"></div>
+                <div class="about-image-side portrait-frame portrait-frame--about">
+                    <img src="clinician-serious.webp" alt="Sarah Pickett, MS, CCC-SLP" class="portrait-image about-portrait">
+                    <div class="credential-stamp" aria-hidden="true">MS<br>CCC-SLP</div>
                 </div>
+
                 <div class="about-content-side">
                     <span class="section-subtitle">Meet Your Clinician</span>
                     <h2>Sarah Pickett, MS, CCC-SLP</h2>
-                    <p class="credentials">Speech-Language Pathologist & Vocologist</p>
-                    
+                    <p class="credentials">Voice-Specialized Speech-Language Pathologist</p>
+
                     <div class="bio-text">
-                        <p>Sarah is a speech-language pathologist and vocologist specializing in voice and upper airway disorders. She spent the past five years practicing in a multidisciplinary voice clinic alongside a fellowship-trained laryngologist, providing comprehensive care for individuals with complex voice conditions.</p>
+                        <p>Sarah is a speech-language pathologist specializing in voice and upper airway disorders. She spent the past five years practicing in a multidisciplinary voice clinic alongside a fellowship-trained laryngologist, providing comprehensive care for individuals with complex voice conditions.</p>
                         <p>Recently, she returned home to Madison to begin her own private practice. With a background in musical theatre, Sarah brings both clinical expertise and artistic insight to her work and enjoys partnering with individuals across the lifespan to strengthen, restore, and optimize their voices.</p>
                     </div>
 
                     <div class="trust-indicators">
                         <div class="indicator">
                             <strong>5+ Years</strong>
-                            <span>Multidisciplinary Clinic Experience</span>
+                            <span>Multidisciplinary clinic experience</span>
                         </div>
                         <div class="indicator">
                             <strong>Specialized</strong>
-                            <span>Vocology & Upper Airway Training</span>
+                            <span>Voice & upper airway care</span>
                         </div>
                     </div>
                 </div>
@@ -130,97 +154,180 @@
         </section>
 
         <section id="pricing" class="pricing-section">
-            <div class="container container-narrow">
+            <div class="container pricing-container">
                 <div class="section-header text-center">
                     <span class="section-subtitle">Investment & Process</span>
                     <h2>Rates & Insurance Details</h2>
-                    <p>Transparent fee structures tailored to support consistent, dedicated vocal rehabilitation.</p>
+                    <p>Clear pricing for clinical voice care and individual voice lessons.</p>
                 </div>
 
                 <div class="pricing-card">
-                    <div class="pricing-tier-grid">
-                        <div class="tier">
-                            <h4>Initial Evaluation</h4>
-                            <div class="price">$150</div>
-                            <p>A comprehensive assessment of your vocal function, history, and goals to build your personalized treatment framework.</p>
+                    <div class="evaluation-strip">
+                        <div>
+                            <span class="rate-label">Start here</span>
+                            <h3>Initial Evaluation</h3>
+                            <p>A comprehensive assessment of vocal function, history, and goals to build a personalized care plan.</p>
                         </div>
-                        <div class="tier border-left">
-                            <h4>Therapy Session</h4>
-                            <div class="price">$100 <span class="per-session">/ session</span></div>
-                            <p>Targeted, one-on-one clinical intervention and training. Discount packages are available for ongoing care.</p>
+                        <div class="evaluation-rate">
+                            <strong>$150</strong>
+                            <span>90 minutes</span>
                         </div>
                     </div>
-                    
-                    <div class="insurance-notice">
-                        <h5>Insurance & Reimbursement Information</h5>
-                        <p>Sarah Pickett Voice and Speech Services, LLC operates as a <strong>private pay</strong> practice. This model allows for immediate, uncompromised care tailored exclusively to your clinical needs.</p>
-                        <p class="superbill-highlight"><strong>Superbills Provided:</strong> A detailed clinical superbill will be provided upon request, which you can submit directly to your health insurance provider for potential out-of-network reimbursement.</p>
+
+                    <div class="carousel-shell pricing-carousel" data-carousel data-carousel-name="rates">
+                        <div class="pricing-tier-grid carousel-track">
+                            <article class="tier">
+                                <span class="rate-label">Clinical care</span>
+                                <h4>Therapy Session</h4>
+                                <div class="price">$100</div>
+                                <div class="session-time">60 minutes</div>
+                                <p>One-on-one clinical voice or speech therapy focused on your individualized treatment goals.</p>
+                            </article>
+
+                            <article class="tier package-tier">
+                                <span class="package-badge">Save $50</span>
+                                <span class="rate-label">Best value</span>
+                                <h4>4-Session Package</h4>
+                                <div class="price">$350</div>
+                                <div class="session-time">Four 60-minute sessions</div>
+                                <p>Available for eligible therapy sessions or voice lessons when consistent follow-up is the right fit.</p>
+                            </article>
+
+                            <article class="tier">
+                                <span class="rate-label">Voice training</span>
+                                <h4>Voice Lesson</h4>
+                                <div class="price">$100</div>
+                                <div class="session-time">60 minutes</div>
+                                <p>Individual non-clinical voice instruction for singers and professional voice users working toward performance or technique goals.</p>
+                            </article>
+                        </div>
+
+                        <div class="carousel-controls" aria-label="Rate carousel controls">
+                            <span class="carousel-hint">Swipe through rates</span>
+                            <div class="carousel-actions">
+                                <button class="carousel-button carousel-prev" type="button" aria-label="Previous rate">←</button>
+                                <span class="carousel-count" aria-live="polite">1 / 3</span>
+                                <button class="carousel-button carousel-next" type="button" aria-label="Next rate">→</button>
+                            </div>
+                        </div>
                     </div>
+
+                    <details class="insurance-notice" open>
+                        <summary>Insurance & reimbursement information</summary>
+                        <div class="insurance-copy">
+                            <p>Sarah Pickett Voice and Speech Services, LLC operates as a <strong>private pay</strong> practice. This model allows care to be tailored to your individual clinical needs.</p>
+                            <p class="superbill-highlight"><strong>Superbills available:</strong> A detailed clinical superbill can be provided upon request for you to submit to your insurance provider for potential out-of-network reimbursement.</p>
+                        </div>
+                    </details>
                 </div>
             </div>
         </section>
 
         <section class="testimonials-section">
-            <div class="container text-center">
-                <span class="section-subtitle">Patient Experiences</span>
-                <h2>What Clients Say</h2>
-                <div class="testimonials-placeholder-box">
-                    <p class="placeholder-text">Client feedback and clinical success stories are currently being compiled for the new Madison practice location and will be published soon.</p>
+            <div class="container testimonials-inline">
+                <div>
+                    <span class="section-subtitle">Patient Experiences</span>
+                    <h2>What Clients Say</h2>
                 </div>
+                <p>Client feedback and clinical success stories are being compiled for the new Madison practice and will be added here soon.</p>
             </div>
         </section>
 
         <section id="contact" class="contact-section">
             <div class="container contact-grid">
                 <div class="contact-info-side">
+                    <span class="section-subtitle">Start a Conversation</span>
                     <h2>Ready to optimize your voice?</h2>
-                    <p>Contact Sarah directly to request an appointment availability, schedule an evaluation, or ask questions regarding voice therapy and coaching options.</p>
-                    
+                    <p>Request appointment availability, schedule an evaluation, or ask a general question about therapy or voice lesson options.</p>
+
                     <div class="contact-details">
                         <div class="detail-item">
-                            <strong>Location:</strong>
-                            <span>Madison, Alabama</span>
+                            <strong>In-person</strong>
+                            <span>Madison + Huntsville, Alabama</span>
                         </div>
                         <div class="detail-item">
-                            <strong>Care Type:</strong>
-                            <span>Private Pay (Superbills Available)</span>
+                            <strong>Virtual</strong>
+                            <span>Available across Alabama</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Care type</strong>
+                            <span>Private Pay · Superbills Available</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="contact-form-side">
                     <div class="form-wrapper">
-                        <h3>Appointment Request</h3>
-                        <form id="appointmentForm" class="appointment-form" action="#" method="POST">
-                            <div class="form-group">
-                                <label for="name">Full Name</label>
-                                <input type="text" id="name" name="name" required placeholder="Jane Doe">
+                        <div class="form-heading-row">
+                            <div>
+                                <span class="form-eyebrow">Quick inquiry</span>
+                                <h3>Appointment Request</h3>
+                            </div>
+                            <span class="form-time">Usually takes 1–2 minutes</span>
+                        </div>
+
+                        <!-- Replace YOUR_FORM_ID with the endpoint Sarah copies from her Formspree form. -->
+                        <form id="appointmentForm" class="appointment-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                            <input type="hidden" name="_subject" value="New Sarah Pickett Voice & Speech website inquiry">
+                            <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                            <div class="form-row form-row--two">
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" name="name" required autocomplete="name" placeholder="Jane Doe">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email Address <span class="required-mark">*</span></label>
+                                    <input type="email" id="email" name="email" required autocomplete="email" placeholder="jane@example.com">
+                                </div>
                             </div>
 
-                            <div class="form-group">
-                                <label for="email">Email Address</label>
-                                <input type="email" id="email" name="email" required placeholder="jane@example.com">
+                            <div class="form-row form-row--two">
+                                <div class="form-group">
+                                    <label for="preferred-contact">Preferred Method of Contact</label>
+                                    <select id="preferred-contact" name="preferred-contact" required>
+                                        <option value="" disabled selected>Select one...</option>
+                                        <option value="email">Email</option>
+                                        <option value="phone">Phone call</option>
+                                        <option value="text">Text message</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone">Phone Number <span class="field-note">optional unless phone/text selected</span></label>
+                                    <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="(256) 555-0123">
+                                </div>
                             </div>
 
                             <div class="form-group">
                                 <label for="service-interest">Service of Interest</label>
                                 <select id="service-interest" name="service-interest" required>
                                     <option value="" disabled selected>Select a service...</option>
-                                    <option value="voice-therapy">Voice Therapy (Clinical)</option>
-                                    <option value="singing-voice">Singing Voice Therapy</option>
-                                    <option value="voice-coaching">Voice Coaching</option>
+                                    <option value="voice-therapy">Voice Therapy</option>
+                                    <option value="singing-voice-therapy">Singing Voice Therapy</option>
+                                    <option value="voice-lessons">Voice Lessons</option>
                                     <option value="upper-airway">Upper Airway Disorders</option>
                                     <option value="gender-affirming">Gender Affirming Voice Care</option>
+                                    <option value="not-sure">Not sure yet</option>
                                 </select>
                             </div>
 
-                            <div class="form-group">
-                                <label for="message">Message / Context</label>
-                                <textarea id="message" name="message" rows="4" placeholder="Briefly describe your goals or any voice challenges you are experiencing..."></textarea>
+                            <div class="privacy-warning" role="note">
+                                <div class="privacy-icon" aria-hidden="true">!</div>
+                                <div>
+                                    <strong>Please keep this message general.</strong>
+                                    <p>Do not include confidential, medical, or other health-related information in this form. It is intended only for scheduling and general questions.</p>
+                                </div>
                             </div>
 
-                            <button type="submit" class="btn btn-primary btn-block">Submit Booking Request</button>
-                            <div id="formStatus" class="form-status" hidden></div>
+                            <div class="form-group">
+                                <label for="message">General Message <span class="field-note">optional</span></label>
+                                <textarea id="message" name="message" rows="3" placeholder="For example: I’m interested in scheduling an evaluation and would like to know your next available appointment."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">Submit Request</button>
+                            <div id="formStatus" class="form-status" hidden aria-live="polite"></div>
                         </form>
                     </div>
                 </div>
@@ -228,10 +335,15 @@
         </section>
     </main>
 
+    <a class="mobile-book-cta" href="#contact">Request an Appointment <span aria-hidden="true">→</span></a>
+
     <footer class="site-footer">
         <div class="container footer-bottom">
-            <p>&copy; 2026 Sarah Pickett Voice and Speech Services, LLC. All rights reserved.</p>
-            <p class="footer-location">Madison, Alabama | Speech-Language Pathology & Vocology Private Practice</p>
+            <div>
+                <p>&copy; 2026 Sarah Pickett Voice and Speech Services, LLC. All rights reserved.</p>
+                <p class="footer-location">Madison + Huntsville, Alabama · Virtual appointments across Alabama</p>
+            </div>
+            <p class="footer-credit">Designed by <a href="https://www.jessie2e.com" target="_blank" rel="noopener noreferrer">2e Studio</a></p>
         </div>
     </footer>
 
