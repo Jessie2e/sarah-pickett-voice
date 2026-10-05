@@ -628,3 +628,26 @@ img { display: block; max-width: 100%; }
         animation-iteration-count: 1 !important;
     }
 }
+/* Decorative circle behind the services heading */
+.services-section {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.services-section::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+
+    width: clamp(300px, 55vw, 620px);
+    aspect-ratio: 1;
+    top: 12.5rem;
+    left: 17%;
+    transform: translateX(-50%);
+
+    border: 1px solid rgba(159, 184, 207, 0.247);
+    border-radius: 50%;
+    background: transparent;
+}
